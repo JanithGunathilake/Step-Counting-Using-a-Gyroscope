@@ -16,12 +16,12 @@
 Adafruit_MPU6050 mpu;
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);  // -1 is used because there is no reset pin for I2C
 
-const char* ssid = "";
-const char* password = "";
-const char* mqttServer = "";
+const char* ssid = "your-ssid";
+const char* password = "your-password";
+const char* mqttServer = "your-mqtt-server";
 const int mqttPort = 1883;
-const char* mqttUser = "";
-const char* mqttPassword = "";
+const char* mqttUser = "your-mqtt-username";
+const char* mqttPassword = "your-mqtt-password";
 const char* fallStatusTopic = "esp32/fallStatus";
 
 
@@ -30,8 +30,8 @@ PubSubClient client(espClient);
 AsyncWebServer server(80);
 
 // Notify.lk settings
-const String apiKey = "";  // Replace with your Notify.lk API key
-const String phoneNumber = "";     // Replace with the recipient's phone number in format 947XXXXXXXX
+const String apiKey = "your-notify-lk-api-key";  // Replace with your Notify.lk API key
+const String phoneNumber = "947XXXXXXXX";    // Replace with the recipient's phone number in format 947XXXXXXXX
 const String message = "Fall detected! Emergency!";
 bool previousFallDetected = false;
 
