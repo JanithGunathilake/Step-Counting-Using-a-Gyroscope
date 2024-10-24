@@ -53,13 +53,4 @@ This project is a wearable IoT device based on the ESP32 that counts steps and d
    git clone https://github.com/yourusername/esp32-step-counter-fall-detection.git
 
 
-const char* ssid = "your-ssid";
-const char* password = "your-password";
-const char* mqttServer = "your-mqtt-server";
-const int mqttPort = 1883;
-const char* mqttUser = "your-mqtt-username";
-const char* mqttPassword = "your-mqtt-password";
-const String apiKey = "your-notify-lk-api-key";
-const String phoneNumber = "947XXXXXXXX";
-
 
